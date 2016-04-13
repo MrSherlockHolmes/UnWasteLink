@@ -17,7 +17,7 @@ function getWebsite(url) {
 /* See: is.gd/sQ2fy8 */
 
 function init() {
-  var badLinks = ["www.reddit.com"];
+  var badLinks = ["adf.ly"];
   var aEl = document.getElementsByTagName("a")
   for (i = 0; i < aEl.length; i++) {
     if (badLinks.indexOf(getWebsite(aEl[i].href)) !== -1) {
@@ -28,4 +28,4 @@ function init() {
 
 init();
 
-/* Not sure... */
+/* It works! */
